@@ -1,0 +1,434 @@
+2022-02-27 16:50:03.360 | INFO     | __main__:train:18 - ======== model config ========
+2022-02-27 16:50:03.360 | INFO     | __main__:train:20 - task_name: clue2020ner
+2022-02-27 16:50:03.360 | INFO     | __main__:train:20 - train_file_path: ./clue/train.json
+2022-02-27 16:50:03.360 | INFO     | __main__:train:20 - dev_file_path: ./clue/dev.json
+2022-02-27 16:50:03.360 | INFO     | __main__:train:20 - bert_path: ./bert-base-chinese
+2022-02-27 16:50:03.361 | INFO     | __main__:train:20 - log_output_dir: ./log
+2022-02-27 16:50:03.361 | INFO     | __main__:train:20 - checkpoint_dir: ./checkpoint
+2022-02-27 16:50:03.362 | INFO     | __main__:train:20 - markup: bio
+2022-02-27 16:50:03.362 | INFO     | __main__:train:20 - loss_type: ce
+2022-02-27 16:50:03.362 | INFO     | __main__:train:20 - train_max_seq_length: 128
+2022-02-27 16:50:03.363 | INFO     | __main__:train:20 - eval_max_seq_length: 512
+2022-02-27 16:50:03.363 | INFO     | __main__:train:20 - do_train: True
+2022-02-27 16:50:03.363 | INFO     | __main__:train:20 - do_eval: False
+2022-02-27 16:50:03.363 | INFO     | __main__:train:20 - do_predict: False
+2022-02-27 16:50:03.363 | INFO     | __main__:train:20 - evaluate_during_training: False
+2022-02-27 16:50:03.363 | INFO     | __main__:train:20 - do_lower_case: False
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - seed: 42
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - train_batch_size: 12
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - eval_batch_size: 12
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - local_rank: -1
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - bert_learning_rate: 5e-05
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - crf_learning_rate: 5e-05
+2022-02-27 16:50:03.364 | INFO     | __main__:train:20 - other_learning_rate: 3e-05
+2022-02-27 16:50:03.365 | INFO     | __main__:train:20 - weight_decay: 0.01
+2022-02-27 16:50:03.365 | INFO     | __main__:train:20 - adam_epsilon: 1e-08
+2022-02-27 16:50:03.365 | INFO     | __main__:train:20 - max_grad_norm: 1.0
+2022-02-27 16:50:03.365 | INFO     | __main__:train:20 - num_train_epochs: 10
+2022-02-27 16:50:03.365 | INFO     | __main__:train:20 - gradient_accumulation_steps: 1
+2022-02-27 16:50:03.365 | INFO     | __main__:train:20 - warmup_proportion: 0.1
+2022-02-27 16:50:03.366 | INFO     | __main__:train:20 - logging_steps: 50
+2022-02-27 16:50:03.366 | INFO     | __main__:train:20 - id2tag: ['X', 'B-address', 'B-book', 'B-company', 'B-game', 'B-government', 'B-movie', 'B-name', 'B-organization', 'B-position', 'B-scene', 'I-address', 'I-book', 'I-company', 'I-game', 'I-government', 'I-movie', 'I-name', 'I-organization', 'I-position', 'I-scene', 'O', '[CLS]', '[SEP]']
+2022-02-27 16:50:08.103 | INFO     | __main__:train:68 - =========begin trainning=========
+2022-02-27 16:50:26.038 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:50:38.752 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:50:38.753 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:50:38.753 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 108.3251 
+2022-02-27 16:50:38.753 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:50:38.754 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:50:38.754 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.754 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:50:38.755 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.756 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:50:38.757 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:38.757 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:50:38.757 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:50:56.367 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:51:09.139 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:51:09.140 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:51:09.140 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 62.5514 
+2022-02-27 16:51:09.140 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.141 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:51:09.142 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.143 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:51:09.143 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.143 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:51:09.143 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:09.143 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:51:09.143 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:26.786 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:51:39.437 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:51:39.438 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:51:39.438 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 56.0086 
+2022-02-27 16:51:39.438 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:51:39.438 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:51:39.438 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.438 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:51:39.439 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.440 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:51:39.440 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.440 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:51:39.440 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.440 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:51:39.440 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.441 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:51:39.441 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:39.441 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:51:39.441 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:51:57.097 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:52:09.770 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:52:09.771 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:52:09.771 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 46.6165 
+2022-02-27 16:52:09.771 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.772 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:52:09.773 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.774 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:52:09.774 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.774 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:52:09.774 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:09.774 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:52:09.774 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:27.405 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:52:40.055 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:52:40.056 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:52:40.056 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 42.0149 
+2022-02-27 16:52:40.056 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.057 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:52:40.058 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.058 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:52:40.058 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.058 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:52:40.058 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:40.059 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:52:40.060 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:52:59.093 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:53:18.073 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:53:18.074 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 36.2733 
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:53:18.075 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.076 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:53:18.076 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.076 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:53:18.076 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.076 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:53:18.076 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.077 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:53:18.077 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.077 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:53:18.077 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.078 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:53:18.078 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:18.078 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:53:18.078 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:40.102 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:53:54.166 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:53:54.167 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:53:54.167 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 32.7738 
+2022-02-27 16:53:54.168 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:53:54.168 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:53:54.168 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.168 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:53:54.168 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.169 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:53:54.169 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.169 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:53:54.169 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.170 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:53:54.170 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.170 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:53:54.170 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.170 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:53:54.170 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.171 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:53:54.171 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.171 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:53:54.171 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:53:54.171 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:53:54.172 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:12.495 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:54:25.679 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:54:25.680 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:54:25.680 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 29.7821 
+2022-02-27 16:54:25.681 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:54:25.681 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:54:25.682 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.682 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:54:25.682 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.682 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:54:25.683 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.683 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:54:25.683 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.683 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:54:25.683 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.683 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:54:25.684 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.684 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:54:25.684 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.684 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:54:25.684 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.685 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:54:25.685 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:25.685 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:54:25.685 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:43.968 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:54:57.429 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:54:57.430 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:54:57.430 | INFO     | __main__:evaluate:162 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 27.7710 
+2022-02-27 16:54:57.430 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:54:57.430 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:54:57.430 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.431 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:54:57.431 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.431 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:54:57.431 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.432 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:54:57.432 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.432 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:54:57.432 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.432 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:54:57.432 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.433 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:54:57.433 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.433 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:54:57.433 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.433 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:54:57.433 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:54:57.434 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:54:57.434 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:15.835 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:55:29.285 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:55:29.286 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:55:29.286 | INFO     | __main__:evaluate:162 -  acc: 0.6667 - recall: 0.0039 - f1: 0.0078 - loss: 26.1706 
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:55:29.287 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.288 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:167 -  acc: 1.0000 - recall: 0.0043 - f1: 0.0086 
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:167 -  acc: 0.7692 - recall: 0.0272 - f1: 0.0526 
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:55:29.289 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:55:29.950 | INFO     | __main__:train:107 - Saving models checkpoint to %s
+2022-02-27 16:55:31.468 | INFO     | __main__:train:111 - Saving optimizer and scheduler states to %s
+2022-02-27 16:55:49.827 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:56:03.672 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:56:03.673 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:56:03.673 | INFO     | __main__:evaluate:162 -  acc: 0.8065 - recall: 0.1709 - f1: 0.2820 - loss: 23.9100 
+2022-02-27 16:56:03.673 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:167 -  acc: 0.7261 - recall: 0.3016 - f1: 0.4262 
+2022-02-27 16:56:03.674 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:167 -  acc: 0.3333 - recall: 0.0034 - f1: 0.0067 
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:56:03.675 | INFO     | __main__:evaluate:167 -  acc: 0.8801 - recall: 0.5527 - f1: 0.6790 
+2022-02-27 16:56:03.676 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:56:03.676 | INFO     | __main__:evaluate:167 -  acc: 0.7727 - recall: 0.4169 - f1: 0.5416 
+2022-02-27 16:56:03.676 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:56:03.676 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:03.676 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:56:03.676 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:04.360 | INFO     | __main__:train:107 - Saving models checkpoint to %s
+2022-02-27 16:56:05.913 | INFO     | __main__:train:111 - Saving optimizer and scheduler states to %s
+2022-02-27 16:56:24.321 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:56:37.011 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:56:37.012 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:56:37.012 | INFO     | __main__:evaluate:162 -  acc: 0.7893 - recall: 0.2074 - f1: 0.3284 - loss: 22.4461 
+2022-02-27 16:56:37.012 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:167 -  acc: 0.7623 - recall: 0.4921 - f1: 0.5981 
+2022-02-27 16:56:37.013 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:167 -  acc: 0.6727 - recall: 0.1254 - f1: 0.2114 
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:56:37.014 | INFO     | __main__:evaluate:167 -  acc: 0.8357 - recall: 0.6344 - f1: 0.7213 
+2022-02-27 16:56:37.015 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:56:37.015 | INFO     | __main__:evaluate:167 -  acc: 0.7778 - recall: 0.3243 - f1: 0.4577 
+2022-02-27 16:56:37.015 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:56:37.015 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:37.015 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:56:37.015 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:56:37.627 | INFO     | __main__:train:107 - Saving models checkpoint to %s
+2022-02-27 16:56:38.952 | INFO     | __main__:train:111 - Saving optimizer and scheduler states to %s
+2022-02-27 16:56:55.566 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:57:07.444 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:57:07.445 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:57:07.445 | INFO     | __main__:evaluate:162 -  acc: 0.7810 - recall: 0.2705 - f1: 0.4018 - loss: 20.7605 
+2022-02-27 16:57:07.445 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:57:07.445 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:57:07.445 | INFO     | __main__:evaluate:167 -  acc: 0.4000 - recall: 0.0429 - f1: 0.0775 
+2022-02-27 16:57:07.446 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:57:07.446 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:57:07.446 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:57:07.446 | INFO     | __main__:evaluate:167 -  acc: 0.7925 - recall: 0.5556 - f1: 0.6532 
+2022-02-27 16:57:07.446 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:57:07.446 | INFO     | __main__:evaluate:167 -  acc: 0.7623 - recall: 0.3153 - f1: 0.4460 
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:167 -  acc: 1.0000 - recall: 0.0040 - f1: 0.0081 
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:167 -  acc: 0.7859 - recall: 0.7419 - f1: 0.7633 
+2022-02-27 16:57:07.447 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:57:07.448 | INFO     | __main__:evaluate:167 -  acc: 0.8454 - recall: 0.4469 - f1: 0.5847 
+2022-02-27 16:57:07.448 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:57:07.448 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:57:07.448 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:57:07.448 | INFO     | __main__:evaluate:167 -  acc: 0.6667 - recall: 0.0096 - f1: 0.0189 
+2022-02-27 16:57:08.088 | INFO     | __main__:train:107 - Saving models checkpoint to %s
+2022-02-27 16:57:09.475 | INFO     | __main__:train:111 - Saving optimizer and scheduler states to %s
+2022-02-27 16:57:26.299 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:57:38.074 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:57:38.075 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:162 -  acc: 0.8047 - recall: 0.3232 - f1: 0.4612 - loss: 19.5342 
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:167 -  acc: 0.6000 - recall: 0.0885 - f1: 0.1542 
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:57:38.076 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:57:38.077 | INFO     | __main__:evaluate:167 -  acc: 0.7370 - recall: 0.6005 - f1: 0.6618 
+2022-02-27 16:57:38.077 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:57:38.077 | INFO     | __main__:evaluate:167 -  acc: 0.7926 - recall: 0.5051 - f1: 0.6170 
+2022-02-27 16:57:38.077 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:57:38.077 | INFO     | __main__:evaluate:167 -  acc: 0.8571 - recall: 0.3401 - f1: 0.4870 
+2022-02-27 16:57:38.077 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:167 -  acc: 0.8674 - recall: 0.7032 - f1: 0.7767 
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:167 -  acc: 0.8390 - recall: 0.4687 - f1: 0.6014 
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:57:38.078 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:57:38.079 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:57:38.079 | INFO     | __main__:evaluate:167 -  acc: 0.3333 - recall: 0.0048 - f1: 0.0094 
+2022-02-27 16:57:38.726 | INFO     | __main__:train:107 - Saving models checkpoint to %s
+2022-02-27 16:57:40.163 | INFO     | __main__:train:111 - Saving optimizer and scheduler states to %s
+2022-02-27 16:58:06.329 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
+2022-02-27 16:58:18.999 | INFO     | __main__:evaluate:155 - 
+
+2022-02-27 16:58:19.000 | INFO     | __main__:evaluate:160 - ***** Eval results *****
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:162 -  acc: 0.7492 - recall: 0.4036 - f1: 0.5246 - loss: 19.2884 
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:163 - ***** Entity results *****
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:165 - ******* address results ********
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:167 -  acc: 0.5648 - recall: 0.1635 - f1: 0.2536 
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:165 - ******* book results ********
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:58:19.001 | INFO     | __main__:evaluate:165 - ******* company results ********
+2022-02-27 16:58:19.002 | INFO     | __main__:evaluate:167 -  acc: 0.7636 - recall: 0.5556 - f1: 0.6432 
+2022-02-27 16:58:19.002 | INFO     | __main__:evaluate:165 - ******* game results ********
+2022-02-27 16:58:19.002 | INFO     | __main__:evaluate:167 -  acc: 0.5743 - recall: 0.5898 - f1: 0.5819 
+2022-02-27 16:58:19.002 | INFO     | __main__:evaluate:165 - ******* government results ********
+2022-02-27 16:58:19.002 | INFO     | __main__:evaluate:167 -  acc: 0.8439 - recall: 0.5911 - f1: 0.6952 
+2022-02-27 16:58:19.002 | INFO     | __main__:evaluate:165 - ******* movie results ********
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:167 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:165 - ******* name results ********
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:167 -  acc: 0.8161 - recall: 0.7828 - f1: 0.7991 
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:165 - ******* organization results ********
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:167 -  acc: 0.7949 - recall: 0.5913 - f1: 0.6781 
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:165 - ******* position results ********
+2022-02-27 16:58:19.003 | INFO     | __main__:evaluate:167 -  acc: 0.9245 - recall: 0.1132 - f1: 0.2016 
+2022-02-27 16:58:19.004 | INFO     | __main__:evaluate:165 - ******* scene results ********
+2022-02-27 16:58:19.004 | INFO     | __main__:evaluate:167 -  acc: 0.8261 - recall: 0.0909 - f1: 0.1638 
+2022-02-27 16:58:19.600 | INFO     | __main__:train:107 - Saving models checkpoint to %s
+2022-02-27 16:58:20.878 | INFO     | __main__:train:111 - Saving optimizer and scheduler states to %s

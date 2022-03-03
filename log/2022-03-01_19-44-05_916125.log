@@ -1,0 +1,63 @@
+2022-03-01 19:44:05.917 | INFO     | __main__:train:19 - ======== model config ========
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - task_name: clue2020ner
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - train_file_path: ./clue/train.json
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - dev_file_path: ./clue/dev.json
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - bert_path: ./bert-base-chinese
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - log_output_dir: ./log
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - checkpoint_dir: ./checkpoint
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - markup: bio
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - loss_type: ce
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - train_max_seq_length: 128
+2022-03-01 19:44:05.918 | INFO     | __main__:train:21 - eval_max_seq_length: 512
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - do_train: True
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - do_eval: False
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - do_predict: False
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - evaluate_during_training: False
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - do_lower_case: True
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - seed: 42
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - train_batch_size: 12
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - eval_batch_size: 12
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - local_rank: -1
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - bert_learning_rate: 5e-05
+2022-03-01 19:44:05.919 | INFO     | __main__:train:21 - crf_learning_rate: 5e-05
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - other_learning_rate: 3e-05
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - weight_decay: 0.01
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - adam_epsilon: 1e-08
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - max_grad_norm: 1.0
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - num_train_epochs: 10
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - gradient_accumulation_steps: 2
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - warmup_proportion: 0.1
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - logging_steps: 50
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - id2ordertag: ['X', 'B', 'I', 'O', '[CLS]', '[SEP]']
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - num_orders: 6
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - id2entitytag: ['X', 'O', 'address', 'book', 'company', 'game', 'government', 'movie', 'name', 'organization', 'position', 'scene', '[CLS]', '[SEP]']
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - num_entitys: 14
+2022-03-01 19:44:05.920 | INFO     | __main__:train:21 - id2tag: ['X', 'O', '[CLS]', '[SEP]', 'I', 'B-address', 'B-book', 'B-company', 'B-game', 'B-government', 'B-movie', 'B-name', 'B-organization', 'B-position', 'B-scene']
+2022-03-01 19:44:07.803 | INFO     | __main__:train:71 - =========begin trainning=========
+2022-03-01 19:44:10.805 | INFO     | __main__:evaluate:128 - ====stop trainning, eval=====
+2022-03-01 19:45:53.035 | INFO     | __main__:evaluate:166 - 
+
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:171 - ***** Eval results *****
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:173 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 - loss: 36.7509 
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:174 - ***** Entity results *****
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:176 - ******* address results ********
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:176 - ******* book results ********
+2022-03-01 19:45:53.038 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:176 - ******* company results ********
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:176 - ******* game results ********
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:176 - ******* government results ********
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:176 - ******* movie results ********
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:176 - ******* name results ********
+2022-03-01 19:45:53.039 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.040 | INFO     | __main__:evaluate:176 - ******* organization results ********
+2022-03-01 19:45:53.040 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.040 | INFO     | __main__:evaluate:176 - ******* position results ********
+2022-03-01 19:45:53.040 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:53.040 | INFO     | __main__:evaluate:176 - ******* scene results ********
+2022-03-01 19:45:53.040 | INFO     | __main__:evaluate:178 -  acc: 0.0000 - recall: 0.0000 - f1: 0.0000 
+2022-03-01 19:45:55.830 | INFO     | __main__:evaluate:128 - ====stop trainning, eval=====

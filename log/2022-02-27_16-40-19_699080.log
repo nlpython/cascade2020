@@ -1,0 +1,33 @@
+2022-02-27 16:40:19.713 | INFO     | __main__:train:18 - ======== model config ========
+2022-02-27 16:40:19.713 | INFO     | __main__:train:20 - task_name: clue2020ner
+2022-02-27 16:40:19.714 | INFO     | __main__:train:20 - train_file_path: ./clue/train.json
+2022-02-27 16:40:19.714 | INFO     | __main__:train:20 - dev_file_path: ./clue/dev.json
+2022-02-27 16:40:19.714 | INFO     | __main__:train:20 - bert_path: ./bert-base-chinese
+2022-02-27 16:40:19.715 | INFO     | __main__:train:20 - log_output_dir: ./log
+2022-02-27 16:40:19.715 | INFO     | __main__:train:20 - checkpoint_dir: ./checkpoint
+2022-02-27 16:40:19.716 | INFO     | __main__:train:20 - markup: bio
+2022-02-27 16:40:19.716 | INFO     | __main__:train:20 - loss_type: ce
+2022-02-27 16:40:19.716 | INFO     | __main__:train:20 - train_max_seq_length: 128
+2022-02-27 16:40:19.716 | INFO     | __main__:train:20 - eval_max_seq_length: 512
+2022-02-27 16:40:19.717 | INFO     | __main__:train:20 - do_train: True
+2022-02-27 16:40:19.717 | INFO     | __main__:train:20 - do_eval: False
+2022-02-27 16:40:19.717 | INFO     | __main__:train:20 - do_predict: False
+2022-02-27 16:40:19.717 | INFO     | __main__:train:20 - evaluate_during_training: False
+2022-02-27 16:40:19.718 | INFO     | __main__:train:20 - do_lower_case: False
+2022-02-27 16:40:19.718 | INFO     | __main__:train:20 - seed: 42
+2022-02-27 16:40:19.718 | INFO     | __main__:train:20 - train_batch_size: 12
+2022-02-27 16:40:19.718 | INFO     | __main__:train:20 - eval_batch_size: 12
+2022-02-27 16:40:19.719 | INFO     | __main__:train:20 - local_rank: -1
+2022-02-27 16:40:19.719 | INFO     | __main__:train:20 - bert_learning_rate: 5e-05
+2022-02-27 16:40:19.719 | INFO     | __main__:train:20 - crf_learning_rate: 5e-05
+2022-02-27 16:40:19.719 | INFO     | __main__:train:20 - other_learning_rate: 3e-05
+2022-02-27 16:40:19.720 | INFO     | __main__:train:20 - weight_decay: 0.01
+2022-02-27 16:40:19.720 | INFO     | __main__:train:20 - adam_epsilon: 1e-08
+2022-02-27 16:40:19.720 | INFO     | __main__:train:20 - max_grad_norm: 1.0
+2022-02-27 16:40:19.720 | INFO     | __main__:train:20 - num_train_epochs: 10
+2022-02-27 16:40:19.721 | INFO     | __main__:train:20 - gradient_accumulation_steps: 1
+2022-02-27 16:40:19.721 | INFO     | __main__:train:20 - warmup_proportion: 0.1
+2022-02-27 16:40:19.721 | INFO     | __main__:train:20 - logging_steps: 50
+2022-02-27 16:40:19.721 | INFO     | __main__:train:20 - id2tag: ['X', 'B-address', 'B-book', 'B-company', 'B-game', 'B-government', 'B-movie', 'B-name', 'B-organization', 'B-position', 'B-scene', 'I-address', 'I-book', 'I-company', 'I-game', 'I-government', 'I-movie', 'I-name', 'I-organization', 'I-position', 'I-scene', 'O', '[CLS]', '[SEP]']
+2022-02-27 16:40:25.915 | INFO     | __main__:train:68 - =========begin trainning=========
+2022-02-27 16:40:44.673 | INFO     | __main__:evaluate:123 - ====stop trainning, eval=====
